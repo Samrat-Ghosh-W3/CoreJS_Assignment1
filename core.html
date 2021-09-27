@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>Weather Report</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row d-flex justify-content-around align-items-center py-5">
+            <div class="col-1"></div>
+            <button type="button" onclick="cToF(28, 36, 32)" class="col-2 btn btn-primary">C-F</button>
+            <button type="button" onclick="fToC(82.4,96.8, 89.6)" class="col-2 btn btn-primary">F-C</button>
+            <div class="col-3"></div>
+        </div>
+        <div class="row ">
+            <div class="col-3 border py-5">
+                
+                
+                <div class="d-flex justify-content-center">
+                    <button type="button" onclick="date1()"  class="container container-fluid btn btn-light"><h4>January-April</h4></button>
+                </div>
+                <p id="demo1" class="d-flex justify-content-center">28C </p>
+
+            </div>
+            <div class="col-3 border py-5">
+                <div class="d-flex justify-content-center">
+                    <button type="button" onclick="date2()"  class="container container-fluid btn btn-light"><h4>May-August</h4></button>
+                </div>
+                <p id="demo2" class="d-flex justify-content-center">36C </p>
+
+            </div>
+            <div class="col-3 border py-5">
+                <div class="d-flex justify-content-center">
+                    <button type="button" onclick="date3()" class="container container-fluid btn btn-light"><h4>September-December</h4></button>
+                    <p id="current"></p>
+                </div>
+                <p id="demo3" class="d-flex justify-content-center">32C </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+    <script src="js.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
